@@ -223,17 +223,6 @@
             font-size: 2em;
             cursor: pointer;
         }
-
-        /* Mostrar menú cuando se activa la clase 'active' */
-        nav.active ul {
-            display: block;
-            width: 100%;
-            text-align: left;
-        }
-
-        nav.active ul li {
-            display: block;
-        }
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2.5em;
@@ -328,6 +317,7 @@
     <a href="#habilidades">Habilidades</a>
     <a href="#contacto">Contacto</a>
 </nav>
+
 <div class="container">
 
     <section id="perfil">
@@ -443,21 +433,6 @@
 <footer>
     <p>&copy; 2024 Omar Ortiz. Todos los derechos reservados.</p>
 </footer>
-<script>
-    // Función para abrir y cerrar el menú
-    function toggleMenu() {
-        const nav = document.querySelector('nav');
-        nav.classList.toggle('active');
-    }
 
-    // Cerrar el menú si el usuario hace clic fuera de él
-    window.addEventListener('click', function(event) {
-        const menu = document.querySelector('nav ul');
-        const menuToggle = document.querySelector('.menu-toggle');
-        if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
-            menu.classList.remove('active');
-        }
-    });
-</script>
 </body>
 </html>
