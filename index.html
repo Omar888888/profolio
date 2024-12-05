@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Omar Ortiz</title>
+
+    <!-- Importar la tipografía de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
         /* Reset y estilo base */
         * {
@@ -12,30 +16,34 @@
             box-sizing: border-box;
         }
 
+        /* Usar la tipografía Poppins */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #f4f4f9;
-            color: #007bff;
+            color: #333;
             line-height: 1.6;
         }
 
         h1, h2, h3 {
             color: #007bff;
+            font-weight: 600;  /* Usar un peso de fuente más grueso para los títulos */
         }
 
         /* Estilo de Header */
         header {
-            background-color: #007bff;
+            background-color: #1900ff;
             color: white;
             text-align: center;
-            padding: 50px 0;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra alrededor del header */
         }
 
         header h1 {
-            font-size: 3.5em;
+            font-size: 3em;
             margin-bottom: 10px;
             text-align: center;
             color: #f4f4f9;
+            font-weight: 600;  /* Mayor peso para hacer el título más llamativo */
         }
 
         header p {
@@ -46,7 +54,7 @@
 
         /* Estilo de Navegación */
         nav {
-            background-color: #007bff;
+            background-color: #1900ff;
             text-align: center;
             padding: 15px 0;
             text-decoration: none;  /* Quitar el subrayado */
@@ -54,14 +62,17 @@
 
         nav a {
             color: white;
-            text-decoration: none;  /* Quitar el subrayado */
             padding: 15px 25px;
-            font-size: 1.1em;
+            font-size: 1.3em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
             transition: background-color 0.3s;
+            font-weight: 500;
+            text-decoration: none;  /* Quitar el subrayado */
         }
 
         nav a:hover {
-            background-color: #1abc9c;
+            background-color: #007bff;
         }
 
         /* Estilo de Contenido */
@@ -72,10 +83,11 @@
 
         .section-title {
             font-size: 2.5em;
-            color: #2d3e50;
+            color: #0004ff;
             margin-bottom: 20px;
-            border-bottom: 2px solid #1abc9c;
+            border-bottom: 2px solid #0004ff;
             padding-bottom: 10px;
+            font-weight: 600;
         }
 
         .section-content {
@@ -103,7 +115,8 @@
         .experience-item h3, .skill-item h3 {
             margin-bottom: 10px;
             font-size: 1.8em;
-            color: #16a085;
+            color: #007bff;
+            font-weight: 600;
         }
 
         .experience-item ul, .skill-item ul {
@@ -129,7 +142,7 @@
 
         /* Estilo del Enlace de Contacto */
         a {
-            color: #1abc9c;
+            color: #007bff;
             text-decoration: none;  /* Quitar subrayado */
         }
 
