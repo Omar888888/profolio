@@ -93,6 +93,25 @@
         .section-content {
             margin-bottom: 40px;
         }
+        .profile-image {
+            display: flex;                   /* Usamos Flexbox */
+            justify-content: center;         /* Centra la imagen horizontalmente */
+            align-items: center;             /* Centra la imagen verticalmente */
+            height: 100%;                     /* Asegura que el contenedor tenga altura suficiente */
+        }
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;  /* Suaviza la transición al cambiar el tamaño */
+        ;
+        }
+
+        .profile-image img:hover {
+            transform: scale(1.1);  /* Aumenta el tamaño de la imagen al pasar el ratón sobre ella */
+        }
+
         /* Estilo para la sección de Estudios */
         #estudios .estudio-item {
             background-color: #ecf0f1;
@@ -217,6 +236,10 @@
 
     <section id="perfil">
         <h2 class="section-title">Perfil Profesional</h2>
+        <!-- Agregar imagen del perfil -->
+    <div class="profile-image">
+        <img src="henry_cavill.jpg" alt="Imagen de Omar Ortiz" style="width: 150px; border-radius: 50%; margin-bottom: 20px;">
+    </div>
         <p>Soy Omar Ortiz, tengo 16 años y mi pasión por la tecnología me ha llevado a descubrir una infinidad de cosas. Desde que era muy joven me interesé en el soporte técnico de computadoras y en el desarrollo web. He trabajado en proyectos personales y con amigos para ayudarles a mejorar sus sistemas y sitios web. Mi objetivo es seguir aprendiendo y contribuir en proyectos reales para seguir desarrollando mis habilidades.</p>
     </section>
 
